@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+{% block body %}
+<style media="screen">
+
+  input[type=text],input[type=password],input[type=email],select{
+    width:300%
+
+  }
+  input[type=submit]{
+    margin-left:50%
+  }
+  tr{
+    padding:50px;
+  }
+  b{
+    position:absulate;
+    margin-right:70px;
+  }
+  table{
+    margin-left:200px;
+    color: aliceblue;
+  }
+  form{
+    border:2px solid white;
+    margin-left:40px;
+    margin-right:0px;
+    padding-bottom:20px;
+    padding-top:40px;
+    border-radius:25px;
+    background-color: rgb(3, 71, 71);
+background-image: linear-gradient(rgb(2, 2, 36),rgb(9, 9, 100),rgb(2, 2, 36));
+  }
+</style>
+
+
+<div class="container abc">
+<form action='' method = "POST">
+<table >
+    <tr>
+        <td ><b>First Name</b></td>
+        <td><input type = "text" name = "first_name" class="form-control"  /></td>
+    </tr>
+    <tr>
+        <td ><b>Last Name</b></td>
+        <td><input type = "text" name = "last_name" class="form-control" /></td>
+    </tr>
+
+    <tr>
+        <td><b>Email</b></td>
+        <td><input type = "email" name = "email" class="form-control" /></td>
+    </tr>
+
+    <tr>
+        <td><b>Password</b></td>
+        <td><input type = "password" name = "password" class="form-control" /></td>
+    </tr>
+
+    <tr>
+        <td><b>Gender</b></td>
+        <td>
+        Male: <input type = "radio" name = "gender"  value="male"/>
+         Female: <input type = "radio" name = "gender"  value="female"/>
+        </td>
+    </tr>
+
+    <tr>
+        <td><b>Hobbies</b></td>
+        <td class="aaa">
+           <input type="checkbox" name="hobbies"  value="cricket">  Cricket<br>
+             <input type="checkbox"  name="hobbies"  value="cricket">Movies<br>
+           <input type="checkbox"  name="hobbies"  value="tv">  TV<br>
+             <input type="checkbox"  name="hobbies"  value="other">Other<br>
+
+        </td>
+    </tr>
+
+
+
+    <tr>
+        <td><b>Country</b></td>
+        <td>
+        <select name="country">
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="australia">Australia</option>
+            <option value="australia">England</option>
+            <option value="australia">Dubai</option>
+            <option value="australia">Japan</option>
+            <option value="australia">Canada</option>
+         </select>
+        </td>
+    </tr>
+
+</table><br>
+  <input type="submit" name="submit" value="submit" class="btn btn-warning" >
+  </form>
+
+</div>
+{% endblock %}

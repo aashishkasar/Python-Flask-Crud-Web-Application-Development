@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% include 'header.html' %}
+
+
+
+{% block title %} Home {% endblock %}
+
+
+
+{% block body %}
+
+
+<div class="container">
+<form action='' method="post">
+  <h5 style="color:white">Click YES To  Delete Confirm</h5>
+    <input type = "submit" value="YES" class="btn btn-danger">
+    <a href='/'  style="color:white" >Cancel</a>
+</form>
+</div>
+{% endblock %}
